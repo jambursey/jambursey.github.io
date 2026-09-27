@@ -1,0 +1,11 @@
+{
+  "name": "jamesbursey-portfolio",
+  "private": true,
+  "scripts": {
+    "serve": "node tests/server.js",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
