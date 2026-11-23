@@ -17,7 +17,7 @@
     '#jb-gate h1{margin:0 0 4px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:22px;font-weight:500}' +
     '#jb-gate p{margin:0 0 4px;font-size:14px;color:#555}' +
     // The "*" glyphs stand in for password dots; the real value lives in JS.
-    '#jb-gate input{box-sizing:border-box;width:100%;margin-top:24px;padding:0 0 4px;border:0;border-bottom:2px solid #000;border-radius:0;background:transparent;outline:0;caret-color:#000;color:#111;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:700;font-size:clamp(32px,6vw,56px);line-height:1.1;letter-spacing:.02em}' +
+    '#jb-gate input{box-sizing:border-box;width:100%;margin-top:24px;padding:0 0 4px;border:0;border-bottom:2px solid #000;border-radius:0;background:transparent;outline:0;caret-color:#000;color:#111;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:700;font-size:clamp(24px,4vw,36px);line-height:1.1;letter-spacing:.02em}' +
     '#jb-gate button{padding:4px 0;border:0;background:none;color:#888;font:inherit;font-size:16px;cursor:pointer}' +
     '#jb-gate button:hover,#jb-gate button:focus-visible{color:#111}' +
     '#jb-gate [role=alert]{min-height:1.2em;margin:0;font-size:14px;color:#b00020}';
