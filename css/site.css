@@ -13451,12 +13451,16 @@ blockquote {
   padding: 8px 5px;
 }
 
+/* The statement image is the <img> inside; the old CSS background duplicated it. */
 .div-block-266 {
-  background-image: url("/assets/6791e7cf7f88fe0da1d09258_Backbone-artists-statement.png");
-  background-position: 0 0;
-  background-size: cover;
   width: auto;
-  height: 1050px;
+  height: auto;
+}
+
+.div-block-266 img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .link-block-53 {
@@ -14547,11 +14551,6 @@ blockquote {
 
   .grid-94 {
     grid-template-rows: auto auto;
-  }
-
-  .div-block-266 {
-    background-image: none;
-    height: 1111px;
   }
 
   .lottie-animation-26 {
