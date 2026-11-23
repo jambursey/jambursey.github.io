@@ -4,6 +4,11 @@ const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
 const PAGES = ['/', '/projects', '/pilot', '/nook', '/xesto-fit', '/about', '/art'];
+const UNLOCK_HASH = 'd9fb92e3bbe65be1f1aad4a82eef4567f7a1ebe2cd110c8049b9698be7a70c88';
+test.beforeEach(async ({ context }) => {
+  await context.addInitScript(h => localStorage.setItem('jb-unlocked', h), UNLOCK_HASH);
+});
+
 const THIRD_PARTY = /youtube|googlevideo|ytimg|ggpht|doubleclick|google\.com|gstatic\.com\/(?!s\/)|elfsight|typeform/;
 
 test.describe('every page', () => {
@@ -55,7 +60,7 @@ test('resume links all point at the current resume', async ({ page }) => {
     await page.goto(p);
     const hrefs = await page.locator('a[href*="Resume"]').evaluateAll(as => as.map(a => a.getAttribute('href')));
     expect(hrefs.length).toBeGreaterThan(0);
-    for (const h of hrefs) expect(h).toContain('Resume-2025-2.pdf');
+    for (const h of hrefs) expect(h).toContain('Resume-11-22.pdf');
   }
 });
 
